@@ -1,5 +1,5 @@
 // API Key Gemini AI - GANTI DENGAN API KEY ANDA
-const GEMINI_API_KEY = 'YOUR_GEMINI_API_KEY_HERE';
+const GEMINI_API_KEY = 'AIzaSyCH8H2h5BvPhC0zBNTxF12H2axcKLE1i04';
 
 // Elements
 const chatMessages = document.getElementById('chatMessages');
