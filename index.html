@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titian AI - Kecerdasan Buatan untuk Solusi Masa Depan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>Titian AI</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Beranda</a>
+                    <a href="#features">Fitur</a>
+                    <a href="#chat">AI Chat</a>
+                    <a href="#about">Tentang</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn btn-outline" id="loginBtn">Masuk</button>
+                    <button class="btn btn-primary" id="registerBtn">Daftar</button>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Kecerdasan Buatan untuk Masa Depan yang Lebih Baik</h2>
+            <p>Titian AI menghadirkan solusi AI canggih untuk membantu bisnis dan individu mencapai potensi maksimal mereka dengan teknologi terdepan.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="tryNowBtn">Coba Sekarang</button>
+                <button class="btn btn-outline" id="learnMoreBtn">Pelajari Lebih Lanjut</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fitur Unggulan</h2>
+                <p>Jelajahi berbagai kemampuan AI yang kami tawarkan untuk meningkatkan produktivitas dan efisiensi Anda</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Asisten AI Cerdas</h3>
+                    <p>Dapatkan bantuan instan dari asisten AI yang dapat memahami dan merespons pertanyaan kompleks dengan akurat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Generasi Konten</h3>
+                    <p>Buat konten berkualitas tinggi untuk blog, media sosial, dan keperluan bisnis lainnya dalam hitungan detik.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Bantuan Pemrograman</h3>
+                    <p>Dapatkan bantuan dalam menulis, debugging, dan mengoptimalkan kode dalam berbagai bahasa pemrograman.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analisis Data</h3>
+                    <p>Analisis dan interpretasi data kompleks untuk mendapatkan wawasan bisnis yang berharga.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Terjemahan & Bahasa</h3>
+                    <p>Terjemahkan teks dengan akurat dan natural ke dalam berbagai bahasa dengan konteks yang tepat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Pemecahan Masalah</h3>
+                    <p>Temukan solusi kreatif untuk tantangan bisnis dan teknis dengan bantuan AI yang inovatif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Section -->
+    <section class="ai-chat" id="chat">
+        <div class="container">
+            <div class="section-title">
+                <h2>Chat dengan Titian AI</h2>
+                <p>Ajukan pertanyaan apapun dan dapatkan jawaban yang cerdas dan informatif</p>
+            </div>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3><i class="fas fa-robot"></i> Titian AI Assistant</h3>
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span>Sistem Aktif</span>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message">
+                        <div class="message-header">
+                            <i class="fas fa-robot"></i>
+                            <span>Titian AI</span>
+                        </div>
+                        <div class="message-content">
+                            Halo! Saya Titian AI, asisten AI Anda. Saya siap membantu dengan berbagai pertanyaan dan tugas. Bagaimana saya bisa membantu Anda hari ini?
+                        </div>
+                        <div class="message-time">Baru saja</div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <div class="chat-input">
+                        <input type="text" id="userInput" placeholder="Ketik pertanyaan Anda di sini...">
+                        <button id="sendButton">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="chat-actions">
+                        <button class="action-btn" id="clearChatBtn">
+                            <i class="fas fa-trash"></i> Bersihkan Chat
+                        </button>
+                        <button class="action-btn" id="suggestQuestionBtn">
+                            <i class="fas fa-lightbulb"></i> Pertanyaan Contoh
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Titian AI</h4>
+                    <p>Platform kecerdasan buatan terdepan untuk solusi bisnis dan individu.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="#">AI Assistant</a></li>
+                        <li><a href="#">Generasi Konten</a></li>
+                        <li><a href="#">Analisis Data</a></li>
+                        <li><a href="#">API Developer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Dukungan</h4>
+                    <ul>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="#">Dokumentasi</a></li>
+                        <li><a href="#">Status Layanan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Titian AI. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal untuk contoh pertanyaan -->
+    <div class="modal" id="suggestionsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Pertanyaan Contoh</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="suggestion-list">
+                    <div class="suggestion-item" data-question="Jelaskan tentang kecerdasan buatan dalam bahasa yang sederhana">Jelaskan tentang kecerdasan buatan dalam bahasa yang sederhana</div>
+                    <div class="suggestion-item" data-question="Bantu saya menulis email profesional untuk follow-up meeting">Bantu saya menulis email profesional untuk follow-up meeting</div>
+                    <div class="suggestion-item" data-question="Berikan contoh kode JavaScript untuk validasi form">Berikan contoh kode JavaScript untuk validasi form</div>
+                    <div class="suggestion-item" data-question="Apa perbedaan antara machine learning dan deep learning?">Apa perbedaan antara machine learning dan deep learning?</div>
+                    <div class="suggestion-item" data-question="Buatkan rencana diet sehat untuk seminggu">Buatkan rencana diet sehat untuk seminggu</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
